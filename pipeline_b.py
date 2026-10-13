@@ -7,19 +7,6 @@ remaining content word to a sign in the 100-word vocabulary, and plays the
 corresponding sign video. Words with no matching sign are reported, not
 silently dropped.
 
-Needs:
-    data/processed/wlasl100_manifest.csv   (gloss -> video path)
-    data/processed/dataset/labels.json     (the 100-word vocabulary)
-    a microphone, and an internet connection (Google speech recognition)
-
-Run from the project root with your venv active:
-    python pipeline_b.py
-
-Performance instrumentation (for Chapter Four):
-    For every utterance it prints:
-      - transcription latency (time the Google speech API took)
-      - utterance-end -> first sign playback latency (the full speech->sign wait)
-    A session average of both is printed when you quit with q.
 """
 
 import csv

@@ -10,15 +10,6 @@ Step 4 of the pipeline: train and evaluate the LSTM sign classifier.
      precision / recall / F1, and a confusion matrix
   6. saves the model, the training curves, and the confusion matrix
 
-Reads:   data/processed/dataset/{X,y}_{train,val,test}.npy, labels.json
-Writes:  models/saved/sign_lstm.keras
-         results/training_curves.png
-         results/confusion_matrix.png
-         results/metrics.txt
-         results/most_confused.txt
-
-Run from the project root with your venv active:
-    python train_model.py
 """
 
 import os

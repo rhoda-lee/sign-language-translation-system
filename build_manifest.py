@@ -11,8 +11,6 @@ Output:
   - data/processed/wlasl100_manifest.csv   (one row per available video)
   - a printed report of sample counts and any signs left too thin to use
 
-Run from the project root with your venv active:
-    python build_manifest.py
 """
 
 import os

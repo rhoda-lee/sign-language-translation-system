@@ -12,12 +12,6 @@ For every clip it:
 
 Then it splits everything 70/15/15 (train/val/test), stratified by sign.
 
-Reads:   data/processed/landmarks/<gloss>/<video_id>.npy
-Writes:  data/processed/dataset/{X,y}_{train,val,test}.npy
-         data/processed/dataset/labels.json
-
-Run from the project root with your venv active:
-    python preprocess.py
 """
 
 import json

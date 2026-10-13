@@ -10,10 +10,8 @@ The camera / recognition work runs on a background thread and hands finished
 frames to the GUI through a queue. Only the main thread touches Tkinter widgets,
 which is what keeps the window from freezing.
 
-Reuses pipeline_a.py and pipeline_b.py (no logic is duplicated).
+Reuses pipeline_a.py and pipeline_b.py 
 
-Run from the project root with your venv active:
-    python app_gui.py
 """
 
 import sys

@@ -1,21 +1,11 @@
 """
 extract_landmarks.py
 Step 2 of the WLASL pipeline: run MediaPipe on every clip in the manifest,
-save the landmark arrays, and report hand-detection rates per sign.
+save the landmark arrays and report hand-detection rates per sign.
 
-This is the check that matters: if detection is high (unlike the 10% we saw
+If detection is high (unlike the 10% we saw
 on the GSL overlay videos), the dataset is good and we move on to training.
 
-Reads:
-    data/processed/wlasl100_manifest.csv   (from build_manifest.py)
-    models/hand_landmarker.task
-
-Writes:
-    data/processed/landmarks/<gloss>/<video_id>.npy   (one array per clip)
-    data/processed/detection_report.csv               (per-sign detection rates)
-
-Run from the project root with your venv active:
-    python extract_landmarks.py
 """
 
 import os

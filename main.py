@@ -10,8 +10,6 @@ Both pipelines live in their own files (pipeline_a.py, pipeline_b.py); this
 file just ties them together behind one menu so the whole system runs as a
 single application.
 
-Run from the project root with your venv active:
-    python main.py
 """
 
 import pipeline_a
